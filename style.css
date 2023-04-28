@@ -8,10 +8,10 @@ body {
 }
 
 .container {
-  /* width: 100%; */
-  max-width: 1140px;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 100%;
+  max-width: 1160px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -22,12 +22,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: black;
 }
 
 .header-logo {
 
+}
+
+.header-logo:hover {
+  color: #DE2E54;
 }
 
 .site-header-nav {
@@ -70,7 +75,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-style: normal;
-  padding: 12px 24px;
+  padding: 10px 22px;
   border-radius:5px;
   font-size: 15px;
   font-weight: 700;
@@ -78,6 +83,7 @@ body {
   line-height: 150%;
   color: white;
   /* margin-top: 0; */
+  /* margin-left: 138px; */
 }
 
 /* HERO PART */
@@ -85,12 +91,13 @@ body {
 .hero {
   background-color:  #0EB4C1;
   color: white;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  align-items: center; */
 
 }
 
-.hero-wrapper {
+.hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,32 +106,34 @@ body {
 .hero-content {
   padding-top: 120px;
   padding-bottom: 120px;
-}
 
-.all-headings {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 120%;
-  margin-bottom: 16px;
+  /* margin-right: 177px; */
 }
 
 .hero-heading {
+  font-family: "Open Sans Condensed", "Open Sans", Arial, san-serif;
   margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 36px;
+  line-height: 1.2;
+  width: 500px;
 }
 
 .hero-info {
   width: 440px;
-  height: 108px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  padding-top: 0;
-  padding-bottom: 36px;
+  /* height: 108px; */
+  /* font-weight: 400;
+  font-size: 18px; */
+  /* line-height: 150%; */
+  margin-top: 0;
+  margin-bottom: 36px;
 }
 
 .hero-img {
+  align-self: flex-end;
   /* display: block; */
-  margin-top: 28px;
+  /* margin-top: 28px; */
+  /* margin-left: 177px; */
 }
 
 /* SERVICES PART */
@@ -133,7 +142,6 @@ body {
 
 }
 .service-heading {
-  width:100%;
   max-width: 133px;
   margin-top: 120px;
   margin-bottom: 56px;
@@ -141,7 +149,7 @@ body {
   margin-right: auto;
 }
 
-.service-list {
+.service-content {
   width: 100%x;
   max-width: 864px;
   margin-left: auto;
