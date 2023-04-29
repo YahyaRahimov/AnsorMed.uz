@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Open Sans','Condensed',sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans','Condensed','Arial',sans-serif;
   line-height: 150%;
 }
 
@@ -28,7 +34,24 @@ body {
 }
 
 .header-logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
 
+.header-logo:hover {
+  color: #DE2E54;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}
+
+.headerlogo-img {
+  margin-right: 16px;
 }
 
 .header-logo:hover {
@@ -36,8 +59,8 @@ body {
 }
 
 .site-header-nav {
-  padding-right: 114px;
-  padding-left: 114px;
+  /* padding-right: 114px; */
+  /* padding-left: 114px; */
 }
 
 .site-header-list {
@@ -58,43 +81,62 @@ body {
 }
 
 .site-header-links {
+
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  letter-spacing: 2px;
 }
 
-.button-links {
+.site-header-links:hover {
+  color: rgba(222, 46, 84, 1);
+}
+
+.site-header-links:active {
+  opacity: 0.6;
+}
+
+/* .button-links {
   background-color: rgba(222, 46, 84, 1);
   width: 189px;
   height: 47px;
-}
+} */
 .main-link {
   background-color: rgba(222, 46, 84, 1);
+  font-family: 'Open Sans Condensed',sans-serif;
   display:inline-block;
   text-transform: uppercase;
   text-decoration: none;
   font-style: normal;
   padding: 10px 22px;
-  border-radius:5px;
+  border: 2px solid #DE2E54;
+  border-radius:8px;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 150%;
   color: white;
-  /* margin-top: 0; */
-  /* margin-left: 138px; */
 }
+
+.site-header-button:hover {
+  color: rgba(222, 46, 84, 1);
+  background-color: white;
+}
+.site-header-button:active {
+  background: #DE2E54;
+  opacity: 0.6;
+  color: white;
+  border: 2px solid #DE2E54;
+  border-radius: 8px;
+}
+
 
 /* HERO PART */
 
 .hero {
   background-color:  #0EB4C1;
   color: white;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-
 }
 
 .hero-container {
@@ -129,6 +171,14 @@ body {
   margin-bottom: 36px;
 }
 
+.hero-link:hover {
+  opacity: 0.8;
+}
+
+.hero-link:active {
+  opacity: 0.6;
+}
+
 .hero-img {
   align-self: flex-end;
   /* display: block; */
@@ -142,6 +192,9 @@ body {
 
 }
 .service-heading {
+  font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
   max-width: 133px;
   margin-top: 120px;
   margin-bottom: 56px;
@@ -154,6 +207,10 @@ body {
   max-width: 864px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.service-list {
+  padding: 0;
 }
 
 .service-parts {
@@ -180,6 +237,7 @@ body {
 }
 
 .service-text {
+  font-family: "Open Sans Condensed", "Open Sans","Condensed" Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
@@ -235,10 +293,11 @@ body {
   margin-top: 0;
   padding-bottom: 64px;
   margin: 0;
+  margin-right: 50px;
 }
 
 .sign-up-list-li {
-  margin-right: 88px;
+  margin-right: 40px;
 }
 
 .sign-up-list-li:last-child {
@@ -246,6 +305,7 @@ body {
 }
 
 .sign-up-links {
+  font-family: 'Open Sans Condensed',sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -257,6 +317,16 @@ body {
   border: 2px solid rgba(255, 255, 255, 1);
   padding: 12px 24px ;
   border-radius: 8px;
+}
+
+.sign-up-links:hover {
+  background: #DE2E54;
+  border: 2px solid #DE2E54;
+  border-radius: 8px;
+}
+
+.sign-up-links:active {
+  opacity: 0.6;
 }
 
 /* SITE - FOOTER  */
@@ -276,8 +346,26 @@ body {
 }
 
 .footer-logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color:white;
+  font-size: 24px;
+  font-weight: 600;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.footer-logo-img {
+  margin-right: 16px;
+}
+
+.footer-logo:hover {
+  color: #DE2E54;
+}
+
+.footer-logo:active {
+  opacity: 0.6;
 }
 
 .site-footer-list {
@@ -302,4 +390,13 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: white;
+}
+
+.site-footer-links:hover {
+  color: #DE2E54;
+}
+
+
+.site-footer-links:active {
+  opacity: 0.6;
 }
