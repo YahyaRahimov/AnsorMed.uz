@@ -3,11 +3,9 @@
 }
 
 *:focus{
-  outline:5px solid;
+  outline:5px dotted #DE2E54;
   outline-width: 3px;
-  outline-color: #DE2E54;
-  outline-style: dotted;
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
 html {
@@ -50,7 +48,7 @@ body {
   font-weight: 600;
 }
 
-.header-logo:hover {
+.headerlogo-text:hover {
   color: #DE2E54;
 }
 
@@ -60,10 +58,6 @@ body {
 
 .headerlogo-img {
   margin-right: 16px;
-}
-
-.header-logo:hover {
-  color: #DE2E54;
 }
 
 .site-header-nav {
@@ -249,12 +243,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
+  margin-top: 0;
 }
 
 .service-info {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  margin-top: 0;
 }
 
 .link-service {
@@ -368,10 +364,6 @@ body {
   margin-right: 16px;
 }
 
-.footer-logo:hover {
-  color: #DE2E54;
-}
-
 .footer-logo:active {
   opacity: 0.6;
 }
@@ -382,6 +374,8 @@ body {
   align-items: center;
   color: white;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-footer-list li {
